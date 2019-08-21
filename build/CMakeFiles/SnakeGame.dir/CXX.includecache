@@ -20,6 +20,16 @@ snake.h
 snake.h
 /home/user/SnakeGame/src/snake.h
 
+/home/user/SnakeGame/src/food.cpp
+food.h
+/home/user/SnakeGame/src/food.h
+iostream
+-
+
+/home/user/SnakeGame/src/food.h
+SDL.h
+/home/user/SnakeGame/src/SDL.h
+
 /home/user/SnakeGame/src/game.cpp
 game.h
 /home/user/SnakeGame/src/game.h
