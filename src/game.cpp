@@ -24,7 +24,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
 
     // Input, Update, Render - the main game loop.
     controller.HandleInput(running, snake);
-    Update();
+    Update(running);
     renderer.Render(snake, food);
 
     frame_end = SDL_GetTicks();
@@ -65,9 +65,17 @@ void Game::PlaceFood() {
   }
 }
 
-void Game::Update() {
-  if (!snake.alive) return;
+void Game::Update(bool &running) {
+  if (!snake.alive){
+    SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
+                         "Game Over.",
+                         "Your snake has eaten itself, sorry.",
+                         NULL);
 
+    running = false;
+    return;
+
+  } 
   snake.Update();
 
   int new_x = static_cast<int>(snake.head_x);

@@ -1,0 +1,3 @@
+Temporizador al juego
+Obstaculos al juego
+Alertas de fin del juego
