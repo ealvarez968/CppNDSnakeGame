@@ -29,6 +29,8 @@ iostream
 /home/user/SnakeGame/src/food.h
 SDL.h
 /home/user/SnakeGame/src/SDL.h
+random
+-
 
 /home/user/SnakeGame/src/game.cpp
 game.h
@@ -45,6 +47,8 @@ SDL.h
 /home/user/SnakeGame/src/SDL.h
 controller.h
 /home/user/SnakeGame/src/controller.h
+food.h
+/home/user/SnakeGame/src/food.h
 renderer.h
 /home/user/SnakeGame/src/renderer.h
 snake.h
@@ -59,6 +63,8 @@ game.h
 /home/user/SnakeGame/src/game.h
 renderer.h
 /home/user/SnakeGame/src/renderer.h
+food.h
+/home/user/SnakeGame/src/food.h
 
 /home/user/SnakeGame/src/renderer.cpp
 renderer.h
@@ -75,6 +81,8 @@ SDL.h
 /home/user/SnakeGame/src/SDL.h
 snake.h
 /home/user/SnakeGame/src/snake.h
+food.h
+/home/user/SnakeGame/src/food.h
 
 /home/user/SnakeGame/src/snake.cpp
 snake.h

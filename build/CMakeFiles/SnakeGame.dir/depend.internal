@@ -102,6 +102,7 @@ CMakeFiles/SnakeGame.dir/src/food.cpp.o
  /usr/local/include/SDL2/close_code.h
 CMakeFiles/SnakeGame.dir/src/game.cpp.o
  /home/user/SnakeGame/src/controller.h
+ /home/user/SnakeGame/src/food.h
  /home/user/SnakeGame/src/game.cpp
  /home/user/SnakeGame/src/game.h
  /home/user/SnakeGame/src/renderer.h
@@ -154,6 +155,7 @@ CMakeFiles/SnakeGame.dir/src/game.cpp.o
  /usr/local/include/SDL2/close_code.h
 CMakeFiles/SnakeGame.dir/src/main.cpp.o
  /home/user/SnakeGame/src/controller.h
+ /home/user/SnakeGame/src/food.h
  /home/user/SnakeGame/src/game.h
  /home/user/SnakeGame/src/main.cpp
  /home/user/SnakeGame/src/renderer.h
@@ -205,6 +207,7 @@ CMakeFiles/SnakeGame.dir/src/main.cpp.o
  /usr/local/include/SDL2/begin_code.h
  /usr/local/include/SDL2/close_code.h
 CMakeFiles/SnakeGame.dir/src/renderer.cpp.o
+ /home/user/SnakeGame/src/food.h
  /home/user/SnakeGame/src/renderer.cpp
  /home/user/SnakeGame/src/renderer.h
  /home/user/SnakeGame/src/snake.h
