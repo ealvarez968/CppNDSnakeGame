@@ -50,7 +50,7 @@ void Renderer::Render(Snake const snake, Food const &food) {
 
   // Render food
 
-  if(food.isSpecial()){
+  if(food.IsSpecial()){
     SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0x17, 0x00, 0xFF);
   }else{
     SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0xCC, 0x00, 0xFF);
@@ -58,8 +58,8 @@ void Renderer::Render(Snake const snake, Food const &food) {
   
   /*block.x = food.x * block.w;
   block.y = food.y * block.h;*/
-  block.x = food.getX() * block.w;
-  block.y = food.getY() * block.h;
+  block.x = food.GetX() * block.w;
+  block.y = food.GetY() * block.h;
   SDL_RenderFillRect(sdl_renderer, &block);
 
   /*if(food.isSpecial()){
@@ -93,7 +93,7 @@ void Renderer::Render(Snake const snake, Food const &food) {
   SDL_RenderPresent(sdl_renderer);
 }
 
-void Renderer::UpdateWindowTitle(int score, int fps) {
-  std::string title{"Snake Score: " + std::to_string(score) + " FPS: " + std::to_string(fps)};
+void Renderer::UpdateWindowTitle(int score, int special, int fps) {
+  std::string title{"Snake Score: " + std::to_string(score) + " Special: "+std::to_string(special)+ " FPS: " + std::to_string(fps)};
   SDL_SetWindowTitle(sdl_window, title.c_str());
 }

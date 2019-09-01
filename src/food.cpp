@@ -2,32 +2,27 @@
 #include <iostream>
 
 
-void Food::setX  ( const int x) {
+void Food::SetX  ( const int x) {
 	position.x = x;
 }
 
-void Food::setY  (const int y) {
+void Food::SetY  (const int y) {
 	position.y = y;
 }
-void Food::setSpecial  (const int special) {
-	this->special = special == 0?false: true;
+void Food::SetSpecial  (const bool special) {
+	this->special = special;
 
 }
-bool Food::isSpecial() const{
+bool Food::IsSpecial() const{
 
 	return special;
 }
 
-
-
-int Food::getX() const{
+int Food::GetX() const{
 	return position.x;
 }
 
-int Food::getY() const{
+int Food::GetY() const{
 	return position.y;
 }
 
-SDL_Point Food::getPosition() const{
-	return position;
-}

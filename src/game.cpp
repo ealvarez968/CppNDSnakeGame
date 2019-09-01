@@ -18,6 +18,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
   Uint32 frame_duration;
   int frame_count = 0;
   bool running = true;
+  int seconds_counter = 0;
 
   while (running) {
     frame_start = SDL_GetTicks();
@@ -33,14 +34,26 @@ void Game::Run(Controller const &controller, Renderer &renderer,
     // takes.
     frame_count++;
     frame_duration = frame_end - frame_start;
-
+    
     // After every second, update the window title.
     if (frame_end - title_timestamp >= 1000) {
-      renderer.UpdateWindowTitle(score, frame_count);
+      if(food.IsSpecial() == true){
+        seconds_counter++;
+        //after 5 seconds set special food FALSE
+        if (seconds_counter >= 5) {
+          seconds_counter = 0;
+          food.SetSpecial(false);
+        }
+      }
+      
+      renderer.UpdateWindowTitle(score, special, frame_count);
       frame_count = 0;
       title_timestamp = frame_end;
     }
 
+    
+
+    
     // If the time for this frame is too small (i.e. frame_duration is
     // smaller than the target ms_per_frame), delay the loop to
     // achieve the correct frame rate.
@@ -58,16 +71,15 @@ void Game::PlaceFood() {
     special_food = random_food(engine);
     // Check that the location is not occupied by a snake item before placing
     // food.
-    std::cout<< special_food<<"Fooood";
     if (!snake.SnakeCell(x, y)) {
-      /*food.x = x;
-      food.y = y;*/
+      food.SetX(x);
+      food.SetY(y);
 
-      food.setX(x);
-      food.setY(y);
-      food.setSpecial(0);
-      if(special_food%2==0){
-        food.setSpecial(1);
+      //if its an  even random number then is special for 5 seconds
+      if((special_food%2)==0){
+        food.SetSpecial(true);
+      }else{
+        food.SetSpecial(false);
       }
       return;
     }
@@ -92,14 +104,22 @@ void Game::Update(bool &running) {
 
   // Check if there's food over here
   //if (food.x == new_x && food.y == new_y) {
-  if (food.getX() == new_x && food.getY() == new_y) {
-    score++;
-    PlaceFood();
+  if (food.GetX() == new_x && food.GetY() == new_y) {
+    
+    
     // Grow snake and increase speed.
     snake.GrowBody();
+    if(food.IsSpecial()){
+       special++;
+    }else{
+      score++;
+    }
+
+    PlaceFood();
     snake.speed += 0.02;
   }
 }
 
 int Game::GetScore() const { return score; }
 int Game::GetSize() const { return snake.size; }
+int Game::GetSpecial() const { return special; }

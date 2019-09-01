@@ -16,18 +16,18 @@ class Food{
 			position.x = x;
 			position.y = y;
 		}
-		void setX(const int x);
-		void setY(const int y);
-		void setSpecial(const int special);
-		bool isSpecial() const;
-		int getX() const;
-		int getY() const;
-		SDL_Point getPosition() const;
-
+		void SetX(const int x);
+		void SetY(const int y);
+		void SetSpecial(const bool special);
+		bool IsSpecial() const;
+		int GetX() const;
+		int GetY() const;
 
 	private:
 		SDL_Point position; 
 		bool special;
+
+	
 
 		std::random_device dev;
   		std::mt19937 engine;

@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/SnakeGame/src/controller.cpp" "/home/user/SnakeGame/build/CMakeFiles/SnakeGame.dir/src/controller.cpp.o"
-  "/home/user/SnakeGame/src/food.cpp" "/home/user/SnakeGame/build/CMakeFiles/SnakeGame.dir/src/food.cpp.o"
-  "/home/user/SnakeGame/src/game.cpp" "/home/user/SnakeGame/build/CMakeFiles/SnakeGame.dir/src/game.cpp.o"
-  "/home/user/SnakeGame/src/main.cpp" "/home/user/SnakeGame/build/CMakeFiles/SnakeGame.dir/src/main.cpp.o"
-  "/home/user/SnakeGame/src/renderer.cpp" "/home/user/SnakeGame/build/CMakeFiles/SnakeGame.dir/src/renderer.cpp.o"
-  "/home/user/SnakeGame/src/snake.cpp" "/home/user/SnakeGame/build/CMakeFiles/SnakeGame.dir/src/snake.cpp.o"
+  "/home/user/CppNDSnakeGame/src/controller.cpp" "/home/user/CppNDSnakeGame/build/CMakeFiles/SnakeGame.dir/src/controller.cpp.o"
+  "/home/user/CppNDSnakeGame/src/food.cpp" "/home/user/CppNDSnakeGame/build/CMakeFiles/SnakeGame.dir/src/food.cpp.o"
+  "/home/user/CppNDSnakeGame/src/game.cpp" "/home/user/CppNDSnakeGame/build/CMakeFiles/SnakeGame.dir/src/game.cpp.o"
+  "/home/user/CppNDSnakeGame/src/main.cpp" "/home/user/CppNDSnakeGame/build/CMakeFiles/SnakeGame.dir/src/main.cpp.o"
+  "/home/user/CppNDSnakeGame/src/renderer.cpp" "/home/user/CppNDSnakeGame/build/CMakeFiles/SnakeGame.dir/src/renderer.cpp.o"
+  "/home/user/CppNDSnakeGame/src/snake.cpp" "/home/user/CppNDSnakeGame/build/CMakeFiles/SnakeGame.dir/src/snake.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

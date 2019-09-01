@@ -14,23 +14,6 @@ class Snake {
         head_x(grid_width / 2),
         head_y(grid_height / 2) {
 
-//TODO:ERASE THIS CODE
-          SDL_Point point; 
-  point.x = 0;
-  point.y = 1;
-  body.push_back(point);
-  body.push_back(point);
-  body.push_back(point);
-  body.push_back(point);
-  body.push_back(point);
-  body.push_back(point);
-  body.push_back(point);
-  body.push_back(point);
-  body.push_back(point);
-  body.push_back(point);
-  body.push_back(point);
-  body.push_back(point);
-
         }
 
   void Update();

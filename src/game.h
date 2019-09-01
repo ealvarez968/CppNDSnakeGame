@@ -16,6 +16,7 @@ class Game {
            std::size_t target_frame_duration);
   int GetScore() const;
   int GetSize() const;
+  int GetSpecial() const;
 
  private:
   Snake snake;
@@ -29,6 +30,7 @@ class Game {
 
 
   int score{0};
+  int special{0};
 
   void PlaceFood();
   void Update(bool &running);
